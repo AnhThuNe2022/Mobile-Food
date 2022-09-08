@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã món ăn:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/AddFood_maMonAn"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên món ăn:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/AddFood_TenMonAn"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại món ăn:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <Spinner
+            android:id="@+id/AddFood_Sippner_LoaiMonAn"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/AddFood_Mota"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:hint="Nhập vào đây mô tả"
+            android:gravity="top"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng tồn kho:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/AddFood_sltk"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ảnh:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                />
+            <Spinner
+                android:id="@+id/AddFood_Spinneranh"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/AddFood_anh"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:src="@drawable/picthitnuong"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:paddingRight="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/AddFood_dongia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn vị tính"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/AddFood_DonViTinh"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/AddFood_btThem"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Xác Nhận Thêm"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:background="@color/orange_thu"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/AddFood_btXoa"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Xác Nhận Xóa"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:background="@color/orange_thu"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
